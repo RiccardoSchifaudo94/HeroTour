@@ -1,8 +1,8 @@
-import { Component,OnInit } from '@angular/core';
+import { Component,Input,OnInit} from '@angular/core';
 import {Hero} from './hero';
 
 @Component({
-  selector: 'hero-detail',
+  selector: 'my-hero-detail',
   template: `
   <div *ngIf="hero">
     <h2>{{hero.name}} details!</h2>
@@ -16,10 +16,11 @@ import {Hero} from './hero';
 })
 
 export class HeroDetailComponent {
-  hero:Hero;
+  
+  @Input() hero:Hero;
+
+  ngOnInit(){
+    alert("lancio HeroDetails!");
+  }
+
 }
-
-
-
-
-
