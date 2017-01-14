@@ -31,8 +31,13 @@ export class AppComponent implements OnInit {
     	this.selectedHero = hero;
     }
 
+    getHeroes():void{
+      this.heroService.getHero();
+    }
+
     ngOnInit(){
       alert("lancio app!");
+      console.log();
     }
 }
 
