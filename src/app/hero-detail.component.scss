@@ -1,0 +1,13 @@
+@import "../assets/scss/variables.scss";
+@import "../assets/scss/mixins.scss";
+
+input{
+	margin-top:20px;
+	height:35px;
+    border:2px solid $dark_gray;
+    padding-left:20px;
+    @include fontLato($black,14px,300);
+}
+label{
+	@include fontLato($dark_gray,16px,400);
+}
